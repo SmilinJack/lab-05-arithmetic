@@ -81,9 +81,9 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-  var sumArray = sum(testArray[0],testArray[1]);
-  var multiSumArray = sum(sumArray[0], testArray[2]);
-  var sumArrayString = `${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${multiSumArray[0]} is their sum.`;
+  var sumArray = sum(sumArr[0],sumArr[1]);
+  var multiSumArray = sum(sumArray[0], sumArr[2]);
+  var sumArrayString = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${multiSumArray[0]} is their sum.`;
   return [multiSumArray[0],sumArrayString];
 }
 
@@ -104,9 +104,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-  var multArray = multiply(testArray[0], testArray[1]);
-  var multiArray = multiply(multArray[0], testArray[2]);
-  var multiplyArrayString = `The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${multiArray[0]}.`
+  var multArray = multiply(sumArr[0], sumArr[1]);
+  var multiArray = multiply(multArray[0], sumArr[2]);
+  var multiplyArrayString = `The numbers ${sumArr[0]},${sumArr[1]},${sumArr[2]} have a product of ${multiArray[0]}.`
   return [multiArray[0], multiplyArrayString];
 
 }
